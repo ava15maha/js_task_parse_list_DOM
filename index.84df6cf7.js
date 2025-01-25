@@ -1,0 +1,2 @@
+function r(r){return+r.replace(/[^0-9]/g,"")}var t,e=document.querySelector("ul");t=Array.from(e.querySelectorAll("li")).sort(function(t,e){var a=r(t.dataset.salary);return r(e.dataset.salary)-a}),e.innerHTML="",t.forEach(function(r){return e.appendChild(r)}),Array.from(e.querySelectorAll("li")).map(function(t){return{names:t.textContent.trim(),salary:r(t.getAttribute("data-salary"))}});
+//# sourceMappingURL=index.84df6cf7.js.map
